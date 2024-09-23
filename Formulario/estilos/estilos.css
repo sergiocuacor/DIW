@@ -1,0 +1,16 @@
+
+section{
+    height: 100%;
+    width: 100%;
+    background-color: #46ffa3;
+    border: 1px solid black;
+    border-radius: 25px;
+}
+form{
+    
+    margin: 30px;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
