@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/estilos.css">
+  </head>
+  <body>
+    <form action="startupForm">
+      <div>
+        <h2>Startup Information</h2>
+
+        <label for="startupName">Startup Name </label>
+        <input type="text" id="startupName" name="companyName" required />
+
+        <label for="companySize">Number of company members</label>
+        <select id="companySize" name="companySize" required>
+          <option value="">Selecciona una opción</option>
+          <option value="1-10">1-10</option>
+          <option value="11-50">11-50</option>
+          <option value="51-200">51-200</option>
+          <option value="200+">200+</option>
+        </select>
+      </div>
+
+      <div>
+        <h2>Contact Information</h2>
+        <label for="fullName">Contact FullName</label>
+        <input type="text" id="fullName" name="fullName" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" required />
+
+        <label for="role">Position</label>
+        <input type="text" id="role" name="role" required />
+      </div>
+
+      <div>
+        <h2>Event details</h2>
+        <label for="attendees">Number of attendees</label>
+        <input
+          type="number"
+          id="attendees"
+          name="attendees"
+          min="1"
+          max="4"
+          value="1"
+          required
+        />
+        <div id="infoSection">
+            <h3>Ticket Information</h3>
+            <ul>
+                <li><strong>General ticket:</strong> 2 members included - 300€+VAT</li>
+                <li><strong>Additional members:</strong> (3rd or 4th) - 90€+VAT per person</li>
+            </ul>
+        </div>
+        <button type="submit">Registrar</button>
+      </div>
+    </form>
+  </body>
+</html>

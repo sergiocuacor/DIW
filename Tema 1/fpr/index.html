@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Startup</title>
+    <link rel="stylesheet" href="./estilos/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <form id="startupRegistration">
+        <h1>Registro de Startup</h1>
+
+        <div class="form-container">
+            <div class="form-section">
+                <h2>Información de la Startup</h2>
+                <label for="companyName">Nombre de la Startup</label>
+                <input type="text" id="companyName" name="companyName" required>
+                
+                <label for="companySize">Tamaño de la empresa</label>
+                <select id="companySize" name="companySize" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="1-10">1-10 empleados</option>
+                    <option value="11-50">11-50 empleados</option>
+                    <option value="51-200">51-200 empleados</option>
+                    <option value="201+">201+ empleados</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <h2>Información de Contacto</h2>
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Teléfono</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="role">Cargo</label>
+                <input type="text" id="role" name="role" required>
+            </div>
+        </div>
+
+        <div class="form-section">
+            <h2>Detalles del Evento</h2>
+            <label for="attendees">Número de asistentes</label>
+            <input type="number" id="attendees" name="attendees" min="1" max="4" value="1" required>
+            
+            <fieldset>
+                <legend>Actividades de interés</legend>
+                <label><input type="checkbox" name="activities" value="networking"> Networking</label>
+                <label><input type="checkbox" name="activities" value="workshops"> Talleres</label>
+                <label><input type="checkbox" name="activities" value="pitching"> Pitching</label>
+                <label><input type="checkbox" name="activities" value="mentoring"> Mentoring</label>
+            </fieldset>
+        </div>
+
+        <div class="info-section">
+            <i class="fas fa-info-circle"></i>
+            <div class="info-content">
+                <p>Precios y detalles del evento:</p>
+                <ul>
+                    <li>Entrada general: 100€ (incluye 2 personas)</li>
+                    <li>Persona adicional: 50€ cada una</li>
+                    <li>Incluye: acceso a todas las actividades, cóctel de networking y material del evento</li>
+                    <li>Duración: 2 días</li>
+                    <li>Ubicación: Centro de Convenciones</li>
+                </ul>
+            </div>
+        </div>
+
+        <button type="submit">Registrar</button>
+    </form>
+</body>
+</html>
